@@ -9,11 +9,11 @@ if __name__ == "__main__":
 
     tones = [0] * i
     with open(f"overtones_{i}", "w") as file:
-        for i in range(i):
-            power = helper.next_lower_power_of_2(i)
-            ratio_str = str(i) + "/" + str(power)
-            tone = (int(i), ratio_str, i / power)
-            tones[i] = tone
+        for n in range(i):
+            power = helper.next_lower_power_of_2(n)
+            ratio_str = str(n) + "/" + str(power)
+            tone = (int(n), ratio_str, n / power)
+            tones[n] = tone
             file.write(f"{tone[0]}: {tone[2]}: {tone[1]}\n")
 
         file.write("\n\n\n")
