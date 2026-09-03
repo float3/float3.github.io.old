@@ -1,7 +1,6 @@
 const timeout = 5;
 
 function getRandomMovie(id: string, button: HTMLButtonElement): void {
-
   const previousWheel = document.getElementById("wheel");
   if (previousWheel) {
     previousWheel.remove();
@@ -26,7 +25,8 @@ function getRandomMovie(id: string, button: HTMLButtonElement): void {
   //wait 5 seconds before showing the result
 
   setTimeout(() => {
-    let randomMovie = moviesToWatch[Math.floor(Math.random() * moviesToWatch.length)];
+    let randomMovie =
+      moviesToWatch[Math.floor(Math.random() * moviesToWatch.length)];
     const result = document.createElement("h2");
     result.id = "result";
     result.textContent = "random movie: ";

@@ -1,9 +1,12 @@
-import subprocess
 import datetime
 import re
+import subprocess
+
 
 def main():
-    git_status = subprocess.check_output(["git", "status", "--porcelain"]).decode("utf-8")
+    git_status = subprocess.check_output(["git", "status", "--porcelain"]).decode(
+        "utf-8"
+    )
     changed_files = re.findall(r"^M\s+(.*\.md)", git_status, re.MULTILINE)
     for file in changed_files:
         with open(file, "r+") as f:
@@ -14,6 +17,7 @@ def main():
             f.write(content)
             f.truncate()
         subprocess.run(["git", "add", file])
+
 
 if __name__ == "__main__":
     main()

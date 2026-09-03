@@ -19,7 +19,6 @@ def next_lower_power_of_2(number):
     return power
 
 
-
 def write_ratios_to_file(filename, base):
     with open(filename, "w") as file:
         for i in range(base + 1):

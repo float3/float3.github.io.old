@@ -9,6 +9,7 @@ def transform_input_to_output(input_string):
 
     return indian_scale
 
+
 input_string = ""
 output = transform_input_to_output(input_string)
 print(output)
