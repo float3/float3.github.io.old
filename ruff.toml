@@ -1,2 +1,4 @@
+extend-exclude = ["*.md"]
+
 [lint]
 ignore = ["DTZ011", "PLW1510"]
