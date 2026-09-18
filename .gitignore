@@ -9,3 +9,5 @@ static/plaintext/blogs.txt
 static/plaintext/graphics-resources.txt
 static/plaintext/papers.txt
 static/plaintext/talks.txt
+/result
+/result-*
